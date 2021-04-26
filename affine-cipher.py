@@ -4,7 +4,7 @@ def main():
     
     """
     #print(Encrypt(Encrypt('k', 3, 5), 11, 7))
-    print(Decrypt('k', 0, 10))
+    #print(Decrypt('k', 0, 10))
 
 def Encrypt(plain : str, a : int, b : int) -> str:
     ciphertext = ''
@@ -26,7 +26,7 @@ def Inverse(a : int) -> int:
     for i in range(1, 26):
         if (a * i) % 26 == 1:
             return i
-    raise Exception(f"No Inverse of {a} found.")
+    raise Exception(f"No inverse of {a} found.")
 
 if __name__ == '__main__':
     main()
